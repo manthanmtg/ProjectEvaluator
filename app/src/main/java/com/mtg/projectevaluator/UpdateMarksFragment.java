@@ -35,7 +35,7 @@ public class UpdateMarksFragment extends Fragment {
                             " FROM student_table WHERE ID="
                             + projNo + ";");
                     EditText ideaMarks = view.findViewById(R.id.ideaMarksEditText);
-                    EditText implementationMarks = view.findViewById(R.id.implementationMarksEditText);
+                    EditText implementationMarks = view.findViewById(R.id.designMarksEditText);
                     EditText extraMarks = view.findViewById(R.id.extraMarksEditText);
                     TextView totalMarks = view.findViewById(R.id.totalMarksUpdateFrag);
                     while (cursor.moveToNext()) {
@@ -55,7 +55,7 @@ public class UpdateMarksFragment extends Fragment {
                 String projNo = ((EditText) view.findViewById(R.id.projNoUpdateFrag)).getText().toString();
                 if(!projNo.equals("")) {
                     String ideaMarks = ((EditText) view.findViewById(R.id.ideaMarksEditText)).getText().toString();
-                    String implementationMarks = ((EditText) view.findViewById(R.id.implementationMarksEditText)).getText().toString();
+                    String implementationMarks = ((EditText) view.findViewById(R.id.designMarksEditText)).getText().toString();
                     String extraMarks = ((EditText) view.findViewById(R.id.extraMarksEditText)).getText().toString();
                     //String totalMarks = ((TextView) view.findViewById(R.id.totalMarksUpdateFrag)).getText().toString();
                     int idm = Integer.parseInt(ideaMarks);

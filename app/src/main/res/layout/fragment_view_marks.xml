@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -18,18 +19,29 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter Project Number Here"
-        android:inputType="number" />
+        android:inputType="number"
+        tools:ignore="Autofill,HardcodedText" />
 
     <Button
         android:id="@+id/btnGetMarks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Get Marks" />
+        android:text="Get Marks"
+        tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/marksView"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/marks_view_ll"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp" />
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/marksView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </LinearLayout>
+
 
 </LinearLayout>

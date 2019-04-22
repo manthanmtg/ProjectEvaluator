@@ -128,7 +128,7 @@ public class ImportFragment extends Fragment {
         } else if (mCredential.getSelectedAccountName() == null) {
             chooseAccount();
         } else if (!isDeviceOnline()) {
-            mOutputText.setText(getActivity().getString(R.string.no_network_avaliable));
+            mOutputText.setText(Objects.requireNonNull(getActivity()).getString(R.string.no_network_avaliable));
         } else {
             new MakeRequestTask(mCredential).execute();
         }
@@ -283,7 +283,7 @@ public class ImportFragment extends Fragment {
         GoogleApiAvailability apiAvailability =
                 GoogleApiAvailability.getInstance();
         final int connectionStatusCode =
-                apiAvailability.isGooglePlayServicesAvailable(getContext());
+                apiAvailability.isGooglePlayServicesAvailable(Objects.requireNonNull(getContext()));
         return connectionStatusCode == ConnectionResult.SUCCESS;
     }
 
@@ -323,6 +323,7 @@ public class ImportFragment extends Fragment {
      * An asynchronous task that handles the Google Sheets API call.
      * Placing the API calls in their own task ensures the UI stays responsive.
      */
+    @SuppressLint("StaticFieldLeak")
     private class MakeRequestTask extends AsyncTask<Void, Void, List<String>> {
         private com.google.api.services.sheets.v4.Sheets mService = null;
         private Exception mLastError = null;
