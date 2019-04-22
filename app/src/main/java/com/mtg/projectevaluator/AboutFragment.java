@@ -22,7 +22,7 @@ public class AboutFragment extends Fragment {
             String description = "This is a app created as a project for Android Development course(2019)" +
                     "This app helps teachers for systematic evaluation of projects.\n" +
                     "Development Team:\n" +
-                    "Mentor: Srinivas K S\n" +
+                    "Mentor: Prof. Srinivas K S\n" +
                     "Manthan B Y\n" +
                     "Shankarnarayana Hebbar\n" +
                     "Amruthanshu Bhat\n" +
@@ -40,8 +40,8 @@ public class AboutFragment extends Fragment {
                 .addTwitter("medyo80")
                 .addYoutube("UC5MglbZXyogaaeXcT1Ad8SQ")
                 .addPlayStore("com.ideashower.readitlater.pro")
-                .addGitHub("medyo")
-                .addInstagram("medyo80")
+                .addGitHub("manthanmtg")
+                .addInstagram("gowda.manthan")
                 .create();
             return aboutPage;
     }
