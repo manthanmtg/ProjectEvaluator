@@ -40,6 +40,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -106,6 +107,7 @@ public class ImportFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Objects.requireNonNull(getContext()).deleteDatabase("student.db");
+                Toast.makeText(getContext(), "Delete Successful", Toast.LENGTH_SHORT).show();
             }
         });
 
