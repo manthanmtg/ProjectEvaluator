@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Project Evaluator</string>
+    <string name="ptool">Project Evaluation Tool</string>
+    <string name="login">Login</string>
+    <string name="pwd_hint">Enter Password</string>
+    <string name="mtg_email">manthan.gowda@gmail.com</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="import_spreadsheet">Import Spreadsheet</string>
+    <string name="view_marks">View marks</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="no_network_avaliable">No network connection available.</string>
+    <string name="steps_to_update">Steps to update:\n
+        1. Input Project Number\n
+        2. Press SET button\n
+        Above step will show current marks\n
+        3. Input all the marks\n
+        4. Click Update button\n
+    </string>
+    <!--
+    * The above two are just for screen-readers to read
+      -what's happening on the screen.
+    * However this is needed for ActionBarDrawerToggle class as input
+    -->
+</resources>

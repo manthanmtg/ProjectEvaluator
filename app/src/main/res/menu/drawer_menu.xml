@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_import"
+            android:icon="@drawable/ic_import"
+            android:title="Import Spreadsheet"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_view_marks"
+            android:icon="@drawable/ic_show_marks"
+            android:title="View Marks"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_update_marks"
+            android:icon="@drawable/ic_update"
+            android:title="Update Marks"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_settings"
+            android:title="Tools"
+            tools:ignore="HardcodedText" />
+    </group>
+    <item
+        android:title="Communicate"
+        tools:ignore="HardcodedText">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_save"
+                    android:icon="@drawable/ic_save"
+                    android:title="Save Final Spreadsheet" />
+                <item
+                    android:id="@+id/nav_email"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Email Final Spreadsheet" />
+                <item
+                    android:id="@+id/nav_changePwd"
+                    android:icon="@drawable/ic_security"
+                    android:title="Change Password" />
+                <item
+                    android:id="@+id/ic_help"
+                    android:icon="@drawable/ic_help_black_24dp"
+                    android:title="Help" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_info"
+                    android:title="About" />
+            </group>
+        </menu>
+    </item>
+</menu>

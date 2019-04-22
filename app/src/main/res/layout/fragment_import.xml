@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/import_spreadsheet"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/sheetID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Paste the google sheets SheetID here"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/mCallApiButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call API" />
+
+    <TextView
+        android:id="@+id/mOutputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/deleteDb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Current DB" />
+
+
+</LinearLayout>
