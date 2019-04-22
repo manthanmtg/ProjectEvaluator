@@ -24,7 +24,7 @@ public class ExportDatabaseFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_export, container, false);
-        Button btnExport = view.findViewById(R.id.btnExport);
+        btnExport = view.findViewById(R.id.btnExport);
         btnExport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
