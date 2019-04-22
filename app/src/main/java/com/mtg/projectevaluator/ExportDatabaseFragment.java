@@ -20,6 +20,7 @@ import static android.support.v4.content.ContextCompat.checkSelfPermission;
 
 public class ExportDatabaseFragment extends Fragment {
     Button btnExport;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -29,22 +30,24 @@ public class ExportDatabaseFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 SQLiteToExcel sqliteToExcel = new SQLiteToExcel(getContext(), "student.db");
-                if(checkSelfPermission(getContext(),Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                if (checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                     Log.v("PG", "Permission Granted");
                 } else {
-                    ActivityCompat.requestPermissions(getActivity(),  new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+                    ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
                 }
-                ActivityCompat.requestPermissions(getActivity(),  new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+                ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
                 sqliteToExcel.exportSingleTable("student_table", "table1.xls", new SQLiteToExcel.ExportListener() {
                     @Override
                     public void onStart() {
 
                     }
+
                     @Override
                     public void onCompleted(String filePath) {
                         Log.i("exportPath", filePath);
                         Toast.makeText(getContext(), "Successful\nPath:" + filePath, Toast.LENGTH_SHORT).show();
                     }
+
                     @Override
                     public void onError(Exception e) {
                         Log.i("exportError", e.toString());

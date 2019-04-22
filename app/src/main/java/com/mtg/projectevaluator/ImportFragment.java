@@ -69,6 +69,7 @@ public class ImportFragment extends Fragment {
     private static final String[] SCOPES = {SheetsScopes.SPREADSHEETS_READONLY};
     DatabaseHelper myDb;
     Button deleteDb;
+
     @SuppressLint("SetTextI18n")
     @Nullable
     @Override
@@ -100,7 +101,6 @@ public class ImportFragment extends Fragment {
                 .setBackOff(new ExponentialBackOff());
 
 
-
         deleteDb = view.findViewById(R.id.deleteDb);
         deleteDb.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,7 +109,6 @@ public class ImportFragment extends Fragment {
                 Toast.makeText(getContext(), "Delete Successful", Toast.LENGTH_SHORT).show();
             }
         });
-
 
 
         return view;

@@ -53,7 +53,7 @@ public class UpdateMarksFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String projNo = ((EditText) view.findViewById(R.id.projNoUpdateFrag)).getText().toString();
-                if(!projNo.equals("")) {
+                if (!projNo.equals("")) {
                     String ideaMarks = ((EditText) view.findViewById(R.id.ideaMarksEditText)).getText().toString();
                     String implementationMarks = ((EditText) view.findViewById(R.id.designMarksEditText)).getText().toString();
                     String extraMarks = ((EditText) view.findViewById(R.id.extraMarksEditText)).getText().toString();

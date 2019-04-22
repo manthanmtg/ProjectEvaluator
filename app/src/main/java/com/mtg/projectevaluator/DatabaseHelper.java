@@ -84,10 +84,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.rawQuery(q, null);
     }
+
     public void updateCV(ContentValues cv, String id) {
         SQLiteDatabase db = this.getWritableDatabase();
-        db.update(TABLE_NAME, cv, "ID="+id, null);
+        db.update(TABLE_NAME, cv, "ID=" + id, null);
     }
+
     public Cursor getuser() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor res = db.rawQuery("select * from " + TABLE_NAME + " ",

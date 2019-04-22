@@ -15,21 +15,21 @@ public class AboutFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-            Element versionElement = new Element();
-            versionElement.setTitle("Version 1.0");
-            Element adsElement = new Element();
-            adsElement.setTitle("Advertise with Us");
-            String description = "This is a app created as a project for Android Development course(2019)" +
-                    "This app helps teachers for systematic evaluation of projects.\n" +
-                    "Development Team:\n" +
-                    "Mentor: Prof. Srinivas K S\n" +
-                    "Manthan B Y\n" +
-                    "Shankarnarayana Hebbar\n" +
-                    "Amruthanshu Bhat\n" +
-                    "Manoj Dandoti\n";
-            View aboutPage = new AboutPage(getContext())
+        Element versionElement = new Element();
+        versionElement.setTitle("Version 1.0");
+        Element adsElement = new Element();
+        adsElement.setTitle("Advertise with Us");
+        String description = "This is a app created as a project for Android Development course(2019)" +
+                "This app helps teachers for systematic evaluation of projects.\n" +
+                "Development Team:\n" +
+                "Mentor: Prof. Srinivas K S\n" +
+                "Manthan B Y\n" +
+                "Shankarnarayana Hebbar\n" +
+                "Amruthanshu Bhat\n" +
+                "Manoj Dandoti\n";
+        View aboutPage = new AboutPage(getContext())
                 .isRTL(false)
-                    .setDescription(description)
+                .setDescription(description)
                 .setImage(R.drawable.about_icon)
                 .addItem(versionElement)
                 .addItem(adsElement)
@@ -43,6 +43,6 @@ public class AboutFragment extends Fragment {
                 .addGitHub("manthanmtg")
                 .addInstagram("gowda.manthan")
                 .create();
-            return aboutPage;
+        return aboutPage;
     }
 }
