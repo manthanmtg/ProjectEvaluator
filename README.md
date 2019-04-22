@@ -1,6 +1,6 @@
 # ProjectEvaluator
 App for teachers for systematic evaluation of projects.
-
+![alt text](https://raw.githubusercontent.com/manthanmtg/data/master/projectevaluator.jpg)
 This app eases the task of evaluating the projects of the students.
 ## Features of the app:
   1. Team details can be uploaded directly from google sheets using a unique sheetID.
