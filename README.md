@@ -1,3 +1,4 @@
+<img src="https://raw.githubusercontent.com/manthanmtg/data/master/project_eval_icon_small.jpg">
 # ProjectEvaluator
 App for teachers for systematic evaluation of projects.
 
