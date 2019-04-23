@@ -78,6 +78,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ExportDatabaseFragment()).commit();
                 break;
+            case R.id.nav_set_points:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new SetPointsFragment()).commit();
+                break;
+
         }
 
         drawer.closeDrawer(GravityCompat.START); // After selection we should close the drawer

@@ -1,6 +1,8 @@
 package com.mtg.projectevaluator;
 
 import android.content.ContentValues;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,6 +15,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Objects;
 
 public class UpdateMarksFragment extends Fragment {
     Button btnSet;
@@ -59,20 +63,25 @@ public class UpdateMarksFragment extends Fragment {
                     String extraMarks = ((EditText) view.findViewById(R.id.extraMarksEditText)).getText().toString();
                     //String totalMarks = ((TextView) view.findViewById(R.id.totalMarksUpdateFrag)).getText().toString();
                     int idm = Integer.parseInt(ideaMarks);
-                    int imm = Integer.parseInt(implementationMarks);
+                    int dem = Integer.parseInt(implementationMarks);
                     int exm = Integer.parseInt(extraMarks);
-                    int totalMarks = (3 * idm + 8 * imm + 5 * exm) / (3 + 8 + 5);
+                    SharedPreferences mPref = Objects.requireNonNull(getContext()).getSharedPreferences("mySharedPref", Context.MODE_PRIVATE);
+                    int ids = mPref.getInt("idea", 3);
+                    int des = mPref.getInt("design", 3);
+                    int exs = mPref.getInt("extra", 3);
+                    int totalMarks = (ids * idm + des * dem + exs * exm) / (ids + des + exs);
 //                String query = "UPDATE student_table SET " +
 //                        "IDEA = " + idm +
-//                        ", IMPLEMENTATION = " + imm +
+//                        ", IMPLEMENTATION = " + dem +
 //                        ", EXTRA = " + exm +
 //                        ", TOTAL = " + totalMarks +
 //                        " WHERE ID = " + projNo + ";";
 //                Cursor cursor = myDb.execQ(query);
 //                Log.i("dbquery", query);
+                    // DESIGN and IMPLEMENTATION are same
                     ContentValues cv = new ContentValues();
                     cv.put("IDEA", idm);
-                    cv.put("IMPLEMENTATION", imm);
+                    cv.put("IMPLEMENTATION", dem);
                     cv.put("EXTRA", exm);
                     cv.put("TOTAL", totalMarks);
                     myDb.updateCV(cv, projNo);

@@ -19,6 +19,9 @@ public class LoginActivity extends AppCompatActivity {
             SharedPreferences mPreferences = this.getSharedPreferences("mySharedPref", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = mPreferences.edit();
             editor.putString("password", "12345");
+            editor.putInt("idea", 3);
+            editor.putInt("design", 3);
+            editor.putInt("extra", 3);
             editor.apply();
         }
     }

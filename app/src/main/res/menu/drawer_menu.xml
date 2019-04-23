@@ -19,6 +19,11 @@
             android:title="Update Marks"
             tools:ignore="HardcodedText" />
         <item
+            android:id="@+id/nav_set_points"
+            android:icon="@drawable/ic_set_points"
+            android:title="Set Points"
+            tools:ignore="HardcodedText" />
+        <item
             android:id="@+id/nav_tools"
             android:icon="@drawable/ic_settings"
             android:title="Tools"
