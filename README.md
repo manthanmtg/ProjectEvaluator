@@ -1,6 +1,7 @@
-# ProjectEvaluator
+# <img src="https://raw.githubusercontent.com/manthanmtg/data/master/project_eval_icon_small.jpg">ProjectEvaluator
 App for teachers for systematic evaluation of projects.
 
+### UI Screenshot
 .
 ![alt text](https://raw.githubusercontent.com/manthanmtg/data/master/projectevaluator.jpg)
 .
@@ -33,6 +34,8 @@ This app eases the task of evaluating the projects of the students.
   4. Multiple projects evaluation at the same time. Nice idea right !!!
   5. As of now Project No. is used as the basis to retrieve results, we can further develop to use Project name, team members
     name to retrieve results also.
+  6. Set Points at any time so marks of students who have already been evaluated also changes.
+  7. HelpStack can be used to provide Help Desk for the users.
 ## Project Development Team:
 <b>Mentor: Prof. Srinivas K S </b>
 ### Team Members:
