@@ -36,7 +36,7 @@ This app eases the task of evaluating the projects of the students.
 ## Project Development Team:
 Mentor: Prof. Srinivas K S
 ### Team Memners:
-Manthan B Y
+Manthan B Y <br>
 Shankarnarayana Hebbar
 Amruthanshu Bhat
 Manoj Dandoti
