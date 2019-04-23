@@ -30,5 +30,13 @@ This app eases the task of evaluating the projects of the students.
   1. UI can be made look more fresh.
   2. Making app even more interactive.
   3. Preventing users making mistakes while entering marks in the early stages only.
-  4. 
-
+  4. Multiple projects evaluation at the same time. Nice idea right !!!
+  5. As of now Project No. is used as the basis to retrieve results, we can further develop to use Project name, team members
+    name to retrieve results also.
+## Project Development Team:
+<b>Mentor: Prof. Srinivas K S </b>
+### Team Members:
+Manthan B Y <br>
+Shankarnarayana Hebbar <br>
+Amruthanshu Bhat <br>
+Manoj Dandoti <br>
