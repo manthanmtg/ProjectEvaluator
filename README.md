@@ -34,9 +34,9 @@ This app eases the task of evaluating the projects of the students.
   5. As of now Project No. is used as the basis to retrieve results, we can further develop to use Project name, team members
     name to retrieve results also.
 ## Project Development Team:
-Mentor: Prof. Srinivas K S
+<b>Mentor: Prof. Srinivas K S </b>
 ### Team Memners:
 Manthan B Y <br>
-Shankarnarayana Hebbar
-Amruthanshu Bhat
-Manoj Dandoti
+Shankarnarayana Hebbar <br>
+Amruthanshu Bhat <br>
+Manoj Dandoti <br>
