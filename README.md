@@ -34,6 +34,7 @@ This app eases the task of evaluating the projects of the students.
   4. Multiple projects evaluation at the same time. Nice idea right !!!
   5. As of now Project No. is used as the basis to retrieve results, we can further develop to use Project name, team members
     name to retrieve results also.
+  6. Set Points at any time so marks of students who have already been evaluated also changes.
 ## Project Development Team:
 <b>Mentor: Prof. Srinivas K S </b>
 ### Team Members:
