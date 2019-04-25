@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    public void login(View view) {
+    public void login(View view) {      // onClick listener for the login button
         String password = ((EditText) findViewById(R.id.txtPwd)).getText().toString();
         // Toast.makeText(getApplicationContext(), password, Toast.LENGTH_SHORT).show(); //just for debug
         if (password.equals((this.getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)).getString("password", "-1-1-1"))) {

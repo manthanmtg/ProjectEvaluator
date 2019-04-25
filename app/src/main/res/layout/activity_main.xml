@@ -44,6 +44,7 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/drawer_menu" />
+    <!--Navigation view consists of a menu and a nav-header-->
     <!--
     * android:layout_gravity="start" will place the contents on left of the screen
     -->

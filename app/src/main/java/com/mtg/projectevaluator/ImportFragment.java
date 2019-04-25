@@ -393,7 +393,8 @@ public class ImportFragment extends Fragment {
         protected void onPostExecute(List<String> output) {
             mProgress.hide();
             if (output == null || output.size() == 0) {
-                mOutputText.setText("No results returned.");
+                // Prev: mOutputText.setText("No results returned.");
+                mOutputText.setText("Database loaded successfully.");
             } else {
                 output.add(0, "Data retrieved using the Google Sheets API:");
                 mOutputText.setText(TextUtils.join("\n", output));
